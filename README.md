@@ -4,16 +4,18 @@ This repository contains a Convolutional Neural Network (CNN) model for classify
 
 ## Table of Contents
 
-- [Project Overview](https://www.google.com/search?q=%23project-overview)
-- [Dataset](https://www.google.com/search?q=%23dataset)
-- [Model Architecture](https://www.google.com/search?q=%23model-architecture)
-- [Training Process](https://www.google.com/search?q=%23training-process)
-- [Results](https://www.google.com/search?q=%23results)
-- [How to Run](https://www.google.com/search?q=%23how-to-run)
-- [Dependencies](https://www.google.com/search?q=%23dependencies)
-- [Future Work](https://www.google.com/search?q=%23future-work)
-- [License](https://www.google.com/search?q=%23license)
-- [Contact](https://www.google.com/search?q=%23contact)
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Training Process](#training-process)
+- [Results](#results)
+- [How to Run](#how-to-run)
+- [Dependencies](#dependencies)
+- [Future Work](#future-work)
+- [License](#license)
+- [Contact](#contact)
 
 ## Project Overview
 
@@ -21,18 +23,31 @@ The goal of this project is to develop an image classification model that can ac
 
 ## Dataset
 
-The model utilizes a dataset of brain MRI images. The notebook specifies the data loaded from Google Drive, structured into `train`, `valid`, and `test` directories.
+This project utilizes the **Labeled MRI Brain Tumor Dataset - Version 1** available on Roboflow Universe.
 
-- **Training Set**: 1695 images belonging to 4 classes.
-- **Validation Set**: 502 images belonging to 4 classes.
-- **Test Set**: 246 images belonging to 4 classes.
+- **Source**: [Labeled MRI Brain Tumor Dataset - Version 1 (Roboflow Universe)](https://drive.google.com/drive/folders/1C9ww4JnZ2sh22I-hbt45OR16o4ljGxju?usp=sharing)
+- **License**: CC BY 4.0
 
-The classes are:
+This dataset was created with images labeled by medical experts following a standardized protocol, including tumor type and location.
 
-1.  `meningioma`
-2.  `glioma`
-3.  `pituitary`
-4.  `no_tumor`
+**Dataset Details:**
+
+- **Number of images**: 2443 total images
+- **Image types**: MRI scans
+
+**Classes:**
+
+- Pituitary tumor
+- Meningioma tumor
+- Glioma tumor
+- No Tumor
+
+**Data Split:**
+The dataset has been pre-split into training, validation, and test sets.
+
+- **Training set**: 1695 images
+- **Validation set**: 502 images
+- **Test set**: 246 images
 
 Images are resized to `128x128` pixels for input to the CNN. A sample of the images from different classes is displayed in the notebook.
 
